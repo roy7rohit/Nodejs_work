@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello Roy</title>
+</head>
+<body onload="window.defaultStatus = 'hello !'; ">
+  <button onclick="window.confirm('Are u sure u want to quit ?')">
+    Confirm
+  </button>
+  <script type='text/javascript'>
+    var doc = window.document;
+    document.write(doc.title);
+
+    var frames = window.frames;
+    for(var i=0; i<frames.length; i++){
+      frames[i].document.body.style.background = "red";
+    }
+  </script>
+</body>
+</html>
